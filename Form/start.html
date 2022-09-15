@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="user_fname"><br>
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" id="user_lname"><br>
+      <label for="dateOfBirth">Date of birth:</label>
+      <input type="date" name="dateOfBirth" id="user_dateOfBirth"><br>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="user_email"><br>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password"><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" name="phone" id="cell_phone"><br>
+      <br>
+      <select name="plans" id="plans">
+        <option value="free">Free plan</option>
+        <option value="plan-a">Gym: $50</option>
+        <option value="plan_b">Swimming: $70</option>
+        <option value="free">Night club: 100</option>
+      </select>
+      <div>
+        <label for="pro_plan">Pro Plan</label>
+        <input type="checkbox" name="pro_plan" id="proPlan">
+        <br>
+        <label for="credit_card">Credit Card Number:</label>
+        <input type="text" name="credit_card" id="cardNumber" placeholder="credit card number">
+        <input type="text" name="cvc" id="card_cvc" placeholder="CVC">
+        <label for="expDate">Expiry Date</label>
+        <input type="date" name="expDate" id="expiring_date">
+      </div>
+      <div><br>
+        <fieldset>
+          <legend>Billing Address</legend>
+          <label for="fullNane">Full Name</label>
+          <input type="text" name="fullName" id="full_name" placeholder="Full Name">
+          <label for="street">Street Numer and Name</label>
+          <input type="text" name="street" id="street_info" placeholder="Street Information"><br>
+          <label for="city">City or Town</label>
+          <input type="text" name="city" id="city_name">
+          <label for="country">Country</label>
+          <input type="text" name="country" id="countryname">
+          <label for="line2"> 2nd Line</label>
+          <textarea name="line2" id="second_line" cols="30" rows="5"></textarea>
+        </fieldset>
+      </div>
+    </form>
+  </body>
+</html>
